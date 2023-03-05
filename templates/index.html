@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="/static/css/main.css">
+
+<h1>Bienvenido, Ingrese su nombre y sus coordenadas</h1>
+<h3>Nota: Para coordenada X: rango de 19.7 a 22.5</h3>
+<h3>Nota: Para coordenada Y: rango de -105 a -98.3</h3>
+<form action="respuesta" method="POST">
+
+    <label for="nombre">Ingrese su nombre:</label>
+    <br>
+    <input type="text" id="nombre" name="nombre" required>
+    <br>
+    <br>
+    <label for="x">Ingrese latitud:</label>
+    <br>
+    <input type="number" id="x" name="x" step=".000001" min="19.7" max="22.5"required>
+    <br>
+    <br>
+    <label for="y">Ingrese longitud:</label>
+    <br>
+    <input type="number" id="y" name="y" step=".000001" min="-105" max="-98.3" required>
+    <br>
+    <br>
+    <br>
+    <input type="submit" value="Submit">
+  </form> 
+
+<img src="/static/mapa2.png" alt="coordenadas" class="center">
