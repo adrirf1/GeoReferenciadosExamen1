@@ -4,8 +4,7 @@ import folium
 import requests
 
 app = Flask(__name__)
-#21.13188
-#-101.68402
+
 @app.route("/")
 def form():
     return render_template('index.html')
